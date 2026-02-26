@@ -1,0 +1,15 @@
+Progetto: sito che mostra i battiti cardiaci (come numero e onde) usando un sensore di battiti cardiaci 
+
+Requisiti:
+3N database relazionale → contenente i dati delle informazioni passate (utente) → nome, cognome, età, battiti cardiaci, data della misurazione
+interfaccia REST (API rest) sito che andrà a mostrare → nome e cognome del paziente, e possibilità di vedere sue passate misurazioni, leggenda per avere un punto di riferimento nella misurazione di dati
+2 agenti che agiscono tra di loro (client - server) (sensore, attuatore → nel nostro caso arduino con sensore misura e viene mostrato sull’app il risultato) → microcontrollore ESP WROOM 32 e sensore KY-039 
+applicazione sviluppata su 3 layer (client, server, database)
+
+bisogna scaricare delle librerie per poter essere usato come un arduino 
+ha 2 thread che si possono usare 1 per contare i battiti e l’altro per accedere al database
+ha una scheda wifi per poter usare le librerie
+
+app per programmare arduino IDE
+librerie da installare versione 1.8.9 o superiore
+framework da utilizzare → Micropython da installare sull’ESP WROOM 32
